@@ -1,0 +1,10 @@
+# This file is used by injectable package to generate dependency injection code
+# See more details at https://pub.dev/packages/injectable
+
+generate_for:
+  # Only these files will be considered for dependency injection
+  - lib/core/di/core_module.dart
+  - lib/features/**/di/*.dart
+
+# Output file (do not change if you already use core/di/injection.dart)
+output: lib/core/di/injection.config.dart

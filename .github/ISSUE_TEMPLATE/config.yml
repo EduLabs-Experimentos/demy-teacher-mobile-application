@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Team Discord
+    url: https://discord.gg/6TFrJXD3
+    about: Use this channel to ask questions before opening an issue.
+
+  - name: Contributing Guide
+    url: https://github.com/nistrahq/demy-teachers/blob/main/CONTRIBUTING.md
+    about: Learn how to branch, commit, test, and open PRs.
+
+  - name: Code of Conduct
+    url: https://github.com/nistrahq/demy-teachers/blob/main/CODE_OF_CONDUCT.md
+    about: Expected standards for communication and collaboration.
+
+  - name: Security Policy
+    url: https://github.com/nistrahq/demy-teachers/blob/main/SECURITY.md
+    about: Report vulnerabilities privately.
+
+  - name: Project Authors
+    url: https://github.com/nistrahq/demy-teachers/blob/main/AUTHORS.md
+    about: Meet the team behind the project.

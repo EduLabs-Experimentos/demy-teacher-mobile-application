@@ -1,0 +1,22 @@
+# Auto-detect text files and normalize line endings
+* text=auto eol=lf
+
+# Ensure specific file types use LF line endings
+*.dart text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+
+# Treat binary files appropriately
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mp4 binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
+*.pdf binary

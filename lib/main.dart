@@ -4,11 +4,15 @@ import 'package:demy_teachers/core/di/injection.dart';
 import 'package:demy_teachers/demy_teachers_app.dart';
 import 'package:demy_teachers/features/profile/presentation/blocs/profile_bloc.dart';
 import 'package:demy_teachers/features/profile/presentation/blocs/profile_event.dart';
+import 'package:demy_teachers/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   configureDependencies();
 

@@ -2,6 +2,7 @@ import 'package:demy_teachers/features/attendance/domain/entities/student.dart';
 import 'package:demy_teachers/features/attendance/domain/usecases/get_students_use_case.dart';
 import 'package:demy_teachers/features/attendance/presentation/blocs/attendance_event.dart';
 import 'package:demy_teachers/features/attendance/presentation/blocs/attendance_state.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AttendanceBloc extends Bloc<AttendanceEvent, AttendanceState> {
@@ -65,7 +66,16 @@ class AttendanceBloc extends Bloc<AttendanceEvent, AttendanceState> {
             errorMessage: failure.message
           ));
         },
-        (_) => emit(AttendanceSuccess()),
+        (_) {
+          FirebaseAnalytics.instance.logEvent(
+            name: 'teacher_mobile_attendance_taken',
+            parameters: {
+              'class_session_id': currentState.classSessionId,
+              'student_count': currentState.students.length,
+            },
+          );
+          emit(AttendanceSuccess());
+        },
       );
     }
   }

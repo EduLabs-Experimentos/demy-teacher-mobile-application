@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "863295223380",
+    "project_id": "demy-teachers-app",
+    "storage_bucket": "demy-teachers-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863295223380:android:e2a2557fec9a1238b45fc1",
+        "android_client_info": {
+          "package_name": "com.nistra.demy.teachers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-7PgB5dMdCYhxYcRd5d0gD9xaybwSKFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

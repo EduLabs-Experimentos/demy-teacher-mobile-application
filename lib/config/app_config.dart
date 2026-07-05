@@ -22,7 +22,7 @@ class AppConfig {
       case Environment.prod:
         return const AppConfig(
           environment: Environment.prod,
-          baseUrl: 'https://nistra-demy.up.railway.app/api/v1',
+          baseUrl: 'https://demy-app-backend-eygre7eda5g3hkfh.southeastasia-01.azurewebsites.net/api/v1',
           enableLogging: false,
         );
     }
